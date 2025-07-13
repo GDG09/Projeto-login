@@ -2,3 +2,19 @@
 /*
 paleta de cores
 */
+:root {
+    --cor-primaria: #4CAF50; /* Verde */
+    --cor-secundaria: #FF9800; /* Laranja */
+    --cor-terciaria: #2196F3; /* Azul */
+    --cor-fundo: #F5F5F5; /* Cinza claro */
+    --cor-texto: #212121; /* Preto suave */
+    --cor-destaque: #E91E63; /* Rosa */
+}
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;}
