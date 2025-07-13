@@ -3,18 +3,58 @@
 paleta de cores
 */
 :root {
-    --cor-primaria: #4CAF50; /* Verde */
-    --cor-secundaria: #FF9800; /* Laranja */
-    --cor-terciaria: #2196F3; /* Azul */
-    --cor-fundo: #F5F5F5; /* Cinza claro */
-    --cor-texto: #212121; /* Preto suave */
-    --cor-destaque: #E91E63; /* Rosa */
+    --cor-primaria: #221811; /* Verde */
+    --cor-secundaria: #855E42; /* Laranja */
+    --cor-terciaria: #B78D6E; /* Azul */
+    --cor-fundo: #D8C1B0; /* Cinza claro */
+    --cor-texto: #401920; /* Preto suave */
+    --cor-destaque: #4D4D4D; /* Rosa */
 }
 /* Estilos gerais */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   }
+
 body {
-    font-family: Arial, sans-serif;
     background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;}
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+
+    background: var(--cor-terciaria);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+}
+section#login > div#image  {
+    display: block;
+    background: var(--cor-fundo) url(../imagens/pexels-btlnza-17249491.jpg) no-repeat center center;
+    height: 200px;
+    background-size: cover;
+}
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+    
+
+
+
+}
