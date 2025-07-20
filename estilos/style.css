@@ -3,12 +3,12 @@
 paleta de cores
 */
 :root {
-    --cor-primaria: #221811; /* Verde */
-    --cor-secundaria: #855E42; /* Laranja */
-    --cor-terciaria: #B78D6E; /* Azul */
-    --cor-fundo: #D8C1B0; /* Cinza claro */
-    --cor-texto: #401920; /* Preto suave */
-    --cor-destaque: #4D4D4D; /* Rosa */
+    --cor-primaria: #221811;
+    --cor-secundaria: #855E42;
+    --cor-terciaria: #B78D6E;
+    --cor-fundo: #D8C1B0;
+    --cor-texto: #401920;
+    --cor-destaque: #4D4D4D;
 }
 /* Estilos gerais */
 * {
@@ -37,14 +37,20 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-
     background: var(--cor-terciaria);
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 1s, height 1s;
+    transition-timing-function: linear;
+    transition: background-image .3s linear;
+
+
+
 }
-section#login > div#image  {
+section#login > div#image{
     display: block;
     background: var(--cor-fundo) url(../imagens/pexels-btlnza-17249491.jpg) no-repeat center center;
     height: 200px;
@@ -53,7 +59,7 @@ section#login > div#image  {
 section#login > div#formulario {
     display: block;
     padding: 10px;
-    
+
 
 
 
