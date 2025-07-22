@@ -9,7 +9,7 @@ telas grandes: min-width 992px: and max-width: 1200px
 telas extra grandes: min-width 1200px: max-width: 1800px
 ----------------------------
 */
-
+  /*celulares e tabletes*/
  @media screen and (min-width: 600px) and (max-width: 992px) {
 
     body {
@@ -32,7 +32,7 @@ telas extra grandes: min-width 1200px: max-width: 1800px
 
   }
 
-
+  /*Desktops e telas maiores*/
  @media screen and (min-width: 992px) {
     body {
       background-image: linear-gradient(to bottom, #D8C1B0, #B78D6E );
@@ -44,14 +44,21 @@ telas extra grandes: min-width 1200px: max-width: 1800px
     }
 
     section#login > div#image{
-      float: left;
+      float: right;
       width: 50%;
       height: 100%;
     }
 
     section#login > div#formulario{
-      float: right;
+      float: left;
       width: 50%;
 
+    }
+    div#formulario > h1 {
+      font-size: 1.8em;
+    }
+
+    div#formulario > p {
+      font-size: 1.2em;
     }
   }
