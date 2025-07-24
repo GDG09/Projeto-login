@@ -10,7 +10,7 @@ telas extra grandes: min-width 1200px: max-width: 1800px
 ----------------------------
 */
   /*celulares e tabletes*/
- @media screen and (min-width: 600px) and (max-width: 992px) {
+ @media screen and (min-width: 564px) and (max-width: 992px) {
 
     body {
       background-image: linear-gradient(to bottom, #D8C1B0, #B78D6E );
